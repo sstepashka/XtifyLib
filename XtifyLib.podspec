@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.library = 'xml', 'z'
   s.compiler_flags = '-all_load', '-ObjC'
 
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz', '$(SDKROOT)/usr/include/libxml'}
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz'}
 end
