@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source_files = 'XtifyLib/*.{h,m}'
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPush.embeddedframework/XtifyPush.framework'
   s.resources = 'XtifyLib/XtifyPush.embeddedframework/Resources/*'
-  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony', 'libxml2.2', 'libz.1.1.3'
+  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony', 'libxml2.2.dylib', 'libz.1.1.3.dylib'
 end
