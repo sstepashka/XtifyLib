@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Xtify
+Spanish
+  Created by Gilad on 5/22/13.
+
+*/
+"KACTION" = "Abierto"; // Action
+"KPUSH1" = "Bienvenida %@, a nuestro hermoso lugar en %@.";

@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Xtify
+Hebrew
+  Created by Gilad on 5/22/13.
+
+*/
+"KACTION" = "חתפ"; // Action
+"KPUSH1" = "ברוך הבא %@, למיקום היפה שלנו ב%@.";

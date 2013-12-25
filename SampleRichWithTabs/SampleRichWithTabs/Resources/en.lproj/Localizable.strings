@@ -1,0 +1,9 @@
+/*
+ Localizable.strings
+ Xtify
+ 
+ Created by Gilad on 6/12/13.
+ 
+ */
+"KACTION" = "Open"; // Action
+"KPUSH1" = "Welcome %@, to our beautiful location in %@."; // Key for push message #1
