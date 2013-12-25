@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'XtifyLib'
   s.version      = '1.0'
   s.summary      = 'Xtify library for iOS application with CocoaPods integration.'
-  s.platform = :ios '6.0'
+  s.platform = :ios, '6.0'
   s.author = {
     'Dmitriy Kuragin' => 'dkuragin@ya.ru'
   }
