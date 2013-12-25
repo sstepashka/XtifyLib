@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'XtifyLib'
   s.version      = '1.0'
   s.summary      = 'Xtify library for iOS application with CocoaPods integration.'
-  s.platform = :ios
+  s.platform = :ios '6.0'
   s.author = {
     'Dmitriy Kuragin' => 'dkuragin@ya.ru'
   }
@@ -14,5 +14,7 @@ Pod::Spec.new do |s|
   s.source_files = 'XtifyLib/*.{h,m}'
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPush.embeddedframework/XtifyPush.framework'
   s.resources = 'XtifyLib/XtifyPush.embeddedframework/Resources/*'
-  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony', 'libxml2.2.dylib', 'libz.1.1.3.dylib'
+  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
+  s.library = 'libxml2.2.dylib', 'libz.1.1.3.dylib'
+  s.compiler_flags = '-all_load', '-ObjC'
 end
