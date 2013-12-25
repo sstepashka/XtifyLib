@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XtifyLib'
-  s.version      = '1.0'
+  s.version      = '1.1'
   s.summary      = 'Xtify library for iOS application with CocoaPods integration.'
   s.platform = :ios, '6.0'
   s.author = {
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/sstepashka/XtifyLib'
   s.source = {
     :git => 'https://github.com/sstepashka/XtifyLib.git',
-    :tag => 'v1.0'
+    :tag => 'v1.1'
   }
   s.source_files = 'XtifyLib/*.{h,m}'
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPush.embeddedframework/XtifyPush.framework'
