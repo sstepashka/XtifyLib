@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.ios.dependency 'SBJson'
   s.ios.dependency 'ASIHTTPRequest'
 
-  s.source_files = 'XtifyLib/*.{h,m}'
+  s.source_files = 'XtifyLib/**.{h,m}'
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPushNoDependencies.framework'
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
   s.library = 'xml2.2', 'z'
