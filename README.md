@@ -6,12 +6,10 @@ Xtify library for iOS application with CocoaPods integration.
 Example of usage
 ========
 
-Using cocoapods.
+Using cocoapods. Podfile:
 
 ```
-
-#### Podfile, example:
-```platform :ios, '6.0'
+platform :ios, '6.0'
 
 pod 'XtifyLib'
 
@@ -29,4 +27,4 @@ XTIFYGLOBAL_H
       file.puts config
     end
 end
-```##``` ```
+```
