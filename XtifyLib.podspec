@@ -22,7 +22,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
   s.library = 'xml2.2', 'z'
 
-  s.source_files 'XtifyGlobal.h'
-
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz' '$(SDKROOT)/usr/include/libxml'}
 end
