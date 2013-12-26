@@ -9,7 +9,7 @@ Example of usage
 Using cocoapods.
 
 #### Podfile, example:
-platform :ios, '6.0'
+'''platform :ios, '6.0'
 
 pod 'XtifyLib'
 
@@ -26,5 +26,5 @@ XTIFYGLOBAL_H
     File.open("Pods/XtifyLib/XtifyLib/XtifyGlobal.h", "w") do |file|
       file.puts config
     end
-end
+end'''
 ##
