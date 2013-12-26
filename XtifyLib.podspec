@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     :tag => 'v2.51'
   }
 
-  s.ios.dependency 'Reachability' , 'SBJson', 'ASIHTTPRequest', 'GTMNSString-HTML'
+  s.ios.dependency = 'Reachability' , 'SBJson', 'ASIHTTPRequest'
 
   s.source_files = 'XtifyLib/*.{h,m}'
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPushNoDependencies.framework'
