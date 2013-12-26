@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XtifyLib'
-  s.version      = '1.1'
+  s.version      = '2.51'
   s.summary      = 'Xtify library for iOS application with CocoaPods integration.'
   s.platform = :ios, '6.0'
   s.author = {
@@ -10,11 +10,13 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/sstepashka/XtifyLib'
   s.source = {
     :git => 'https://github.com/sstepashka/XtifyLib.git',
-    :tag => 'v1.1'
+    :tag => 'v2.51'
   }
+
+  s.ios.dependency 'Reachability' , 'SBJson', 'ASIHTTPRequest', 'GTMNSString-HTML'
+
   s.source_files = 'XtifyLib/*.{h,m}'
-  s.ios.vendored_frameworks = 'XtifyLib/XtifyPush.embeddedframework/XtifyPush.framework'
-  s.resources = 'XtifyLib/XtifyPush.embeddedframework/Resources/*'
+  s.ios.vendored_frameworks = 'XtifyLib/XtifyPushNoDependencies.framework'
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
   s.library = 'xml2.2', 'z'
 
