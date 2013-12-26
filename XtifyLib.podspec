@@ -19,8 +19,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XtifyLib/**/*.{h,m}',
   s.ios.vendored_frameworks = 'XtifyLib/XtifyPushNoDependencies.framework'
-  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
+  s.preserve_paths = 'XtifyLib/XtifyPushNoDependencies.framework/*'
+  s.frameworks = 'XtifyPushNoDependencies', 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'MapKit', 'CoreData', 'MessageUI', 'CoreLocation', 'CFNetwork', 'MobileCoreServices', 'CoreTelephony'
   s.library = 'xml2.2', 'z'
 
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz' '$(SDKROOT)/usr/include/libxml'}
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/XtifyLib"', 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz' '$(SDKROOT)/usr/include/libxml' }
 end
